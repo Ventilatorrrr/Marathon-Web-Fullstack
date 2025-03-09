@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.weather
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.date
+{
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  background-color: #4682b4;
+  text-align: center;
+  width: 100%;
+}
+
+.temperature
+{
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+
+.day:hover
+{
+  box-shadow: -1px 1px 11px 4px rgba(77, 77, 77, 0.35);
+}
