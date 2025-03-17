@@ -1,0 +1,291 @@
+h1
+{
+    text-align: center;
+}
+.boxMain
+{
+    position: relative;
+    height: 500px;
+    width: 800px;
+    background: #3d4752;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: #e6e6e6;
+    justify-content: space-between; /* Розташовує елементи по краях */
+    align-items: flex-start; /* Вирівнює по верхньому краю */
+}
+.boxS
+{
+    position: relative;
+    height: 395px;
+    width: 600px;
+    margin: 20px 20px;
+    background: #4c5967;
+    padding: 30px;
+    border: 2px solid rgb(240, 242, 244, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Розміщує секції зліва і справа */
+    gap: 20px;
+}
+
+.column {
+    width: 45%; /* Дві колонки, кожна займає половину ширини */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    align-items: center; /* Вирівнює по вертикалі */
+    gap: 20px; /* Відстань між .fonts і .darkUI */
+    padding: 15px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    background: #4c5967;
+    padding: 15px;
+    width: 45%; /* Щоб займати половину boxS */
+    margin-top: 15px;
+}
+
+.fonts
+{
+    width: 200px;
+    height: 30px;
+    background: #2b333b;
+    border: 1px solid #ffffff;
+    color: #e6e6e6;
+}
+
+.weight-label {
+    padding-left: 30px;
+    position: relative;
+
+}
+
+.weight-label:before {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    content: '';
+    border: 1px solid #e6e6e6;
+    background-color: #3d4752;
+    left: 0;
+}
+
+.weight-option:checked + .weight-label:before {
+    content: '✓';
+    color: #34bda5;
+    line-height: 15px;
+    text-align: center;
+}
+
+.weight-option {
+    position: absolute;
+    margin-left: -1000px;
+    padding-top: 10px;
+}
+
+#size-container {
+    display: flex;
+    align-items: center; /* Вирівнює елементи вертикально */
+    gap: 110px; /* Змінюй значення, щоб коригувати відстань */
+}
+
+#aSmall {
+    font-size: small;
+}
+
+#aBig {
+    font-size: larger;
+}
+
+.range1
+{
+    height: 1px;
+    width: 125px;
+    -webkit-appearance: none;
+    background: #2b333b;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.range1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #34bda5;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.switch1
+{
+    margin-left: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 58px; /* Довжина перемикача */
+    height: 34px; /* Висота перемикача */
+}
+
+/* Приховуємо стандартний чекбокс */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Стилізація слайдера */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3d4752; /* Колір у вимкненому стані */
+    transition: 0.4s;
+    border-radius: 34px; /* Закруглені кути */
+}
+
+/* Стилізація кружечка всередині */
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #34bda5;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Коли чекбокс активний */
+input:checked + .slider {
+    background-color: #3c75be; /* Колір у ввімкненому стані */
+}
+
+/* Переміщення кружечка всередині */
+input:checked + .slider::before {
+    transform: translateX(24px);
+}
+
+
+.darkUI {
+    margin-left: 0; /* Видаляємо зайвий відступ */
+}
+.dark
+{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between; /* Розміщуємо текст і перемикач по краях */
+    width: 150px; /* Або будь-яке інше значення для контролю відстані */
+}
+
+.color-pick::before {
+    margin-right: 15px;
+    border: 0.1rem solid grey;
+    height: var(--color-checkbox-size);
+    width: var(--color-checkbox-size);
+}
+:root {
+    --color-checkbox-size: 2rem;
+    --toggle-after-size: 2.7rem;
+    --toggle-before-height: 3.5rem;
+    --toggle-before-width: 6.5rem;
+}
+.color-picker-block,
+.color-pick::before {
+    display: flex;
+    align-items: center;
+}
+.label:hover,
+select:hover,
+.weight input:hover,
+.font-size:hover,
+.img:hover {
+    cursor: pointer;
+}
+.weight,
+.color-pick::before,
+.side-menu {
+    align-items: center;
+}
+.weight input,
+.color-pick::before {
+    justify-content: center;
+}
+.checkbox:checked + .color-pick::before {
+    content: '✓';
+}
+.font-size::before,
+.font-size::after {
+    content: 'A';
+    top: 2.5rem;
+}
+.checkbox:checked + .color-pick::before {
+    color: white;
+}
+.checkbox {
+    display: none;
+}
+.color-pick::before {
+    content: '';
+}
+.color-pick::before {
+    border-radius: 50%;
+}
+.visuals::after,
+.color-pick:nth-of-type(2)::before {
+    background: #37bca4;
+}
+.color-picker-block {
+    justify-content: space-between;
+    width: calc(100% - var(--color-checkbox-size));
+}
+.color-pick::before {
+    border: 0.1rem solid grey;
+    height: var(--color-checkbox-size);
+    width: var(--color-checkbox-size);
+}
+.color-pick:first-of-type::before {
+    background: #3c75be;
+}
+.color-pick:nth-of-type(3)::before {
+    background: #de56d1;
+}
+.color-pick:nth-of-type(4)::before {
+    background: #ddd951;
+}
+.color-pick:nth-of-type(5)::before {
+    background: #de7c57;
+}
+
+.menu {
+    height: 270px;
+    background: #2b333b;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 100%; /* Впритул до лівого краю */
+    top: 50%; /* Вирівнюємо по центру */
+    transform: translateY(-50%); /* Щоб центр елемента співпадав з центром контейнера */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 2px; /* Якщо є маленький пробіл між меню та блоком */
+}

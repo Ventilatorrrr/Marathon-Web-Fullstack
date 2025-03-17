@@ -1,0 +1,98 @@
+h1 {
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    background: #a7540c;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Основне меню */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-flex;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f29340;
+    width: 300px; /* Фіксована ширина для основного меню */
+    height: 60px; /* Основне меню трохи вище */
+    margin: 0px 5px 0px 0px;
+    cursor: pointer;
+    font-family: Arial;
+    color: white;
+    box-sizing: border-box;
+    border: none;
+    transition: background-color 0.5s ease; /* Плавна зміна фону */
+}
+
+.menu span:hover {
+    background-color: #8f480a; /* Колір фону при наведенні */
+}
+
+/* Підменю */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f08628;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    width: 300px; /* Точно така ж ширина, як і в основного меню */
+    transition: background-color 0.5s ease; /* Плавна зміна фону */
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ee7811;
+    color: #fff;
+    height: 50px; /* Підменю трохи нижче, ніж основне меню */
+    width: 100%; /* Відповідає ширині батьківського елемента */
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.5s ease; /* Плавна зміна фону */
+}
+
+.submenu span:hover {
+    background-color: #8f480a; /* Колір фону підменю при наведенні */
+    color: #f8c9a0; /* Колір тексту при наведенні */
+}
+
+/* Відкриття підменю при наведенні */
+.menu > li:hover > .submenu,
+.submenu li:hover > .submenu {
+    display: block;
+}
+
+/* Підменю третього рівня */
+.submenu .submenu {
+    top: 0;
+    left: 100%;
+    background-color: #ee7811;
+}
+
+
+

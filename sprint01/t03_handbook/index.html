@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Handbook</title>
+  <meta name="description" content="t03. Handbook">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<h1>Handbook</h1>
+<h3>HTML</h3>
+<!-- html -->
+<div class="container">
+   <div class="grid_container grid_html_container">
+     <div class="html_grid1">
+       <p class="bold">h1</p>
+       <p>The h1 to h6 tags are used to define HTML headings</p><br>
+       <p>&lt;h1&gt;Title&lt;/h1&gt;</p>
+       <h1>Title</h1>
+     </div>
+
+     <div class="html_grid2">
+       <p class="bold">table</p>
+       <p>defines an HTML table</p><br>
+       <p>&lt;table&gt;&lt;/table&gt;</p>
+       <table id="table1">
+         <tr>
+             <th>Country</th>
+             <th>Country</th>
+             <th>Country</th>
+         </tr>
+         <tr>
+           <td>1</td>
+           <td>2</td>
+           <td>3</td>
+         </tr>
+       </table>
+     </div>
+
+     <div class="html_grid3">
+       <p class="bold">hr</p>
+       <p>draws a horizontal line</p><br>
+       <p>&lt;hr&gt;</p>
+       <hr>
+       <p>Lorem ipsum dolor sit amet, consectetur, adipiscing elit, sed diem nonummy nibh</p>
+       <hr>
+     </div>
+
+     <div class="html_grid4">
+       <p class="bold">input</p>
+       <p>Designed to create text fields, various buttons, radio buttons and checkboxes</p><br>
+       <p>&lt;input attributes&gt;</p><br>
+       <label class="bold" for="yourName">Your Name</label><br>
+       <input type="text" name="yourName" id="yourName"><br><br>
+       <label  class="bold" for="answer1">Question</label><br>
+       <input type="radio" id="answer1" value="answer1" name="answer1">
+       <label for="answer1">answer</label><br>
+       <input type="radio" id="answer2" value="answer2" name="answer2">
+       <label for="answer2">answer</label><br>
+       <input type="radio" id="answer3" value="answer3" name="answer3">
+       <label for="answer3">answer</label><br>
+     </div>
+
+     <div class="html_grid5">
+       <p class="bold">button</p>
+       <p>Clickable button</p><br>
+       <p>&lt;button&gt;Button&lt;/button&gt;</p>
+       <button class="btn">Button</button>
+     </div>
+   </div>
+</div>
+<!-- css -->
+<h3>CSS</h3>
+<div class="container">
+    <div class="grid_container grid_css_container">
+      <div class="html_grid1">
+        <p class="bold">background</p>
+        <p>specifies the background of an element</p><br>
+        <p>background: [];</p>
+        <p id="css1">Text</p>
+      </div>
+
+     <div class="html_grid2">
+       <p class="bold">opacity</p>
+       <p>specifies the opacity/transparency of an element</p><br>
+       <p id="opacity">opacity: 0.8;</p>
+       <table id="table2">
+         <tr>
+           <td id="td1"></td>
+         </tr>
+         <tr>
+           <td id="td2"></td>
+         </tr>
+         <tr>
+           <td id="td3"></td>
+         </tr>
+         <tr>
+           <td id="td4"></td>
+         </tr>
+       </table>
+     </div>
+
+     <div class="html_grid3">
+       <p class="bold">line-height</p>
+       <p>specifies the height of a line</p><br>
+       <p>line-height: 1,5;</p><br>
+       <p class="lineH">Lorem ipsum dolor</p>
+       <p class="lineH">Lorem ipsum dolor</p>
+     </div>
+
+     <div class="html_grid4">
+       <p class="bold">text-align</p>
+       <p>specifies the horizontal alignment of text in an element.</p><br>
+       <p>text-align: center;</p><br>
+       <h3>Text</h3>
+       <h3 id="textA1">Text</h3>
+       <h3 id="textA2">Text</h3>
+     </div>
+
+     <div class="html_grid5">
+       <p class="bold">border</p>
+       <p>specifies the style of the outline</p><br>
+       <p>border-bottom: 2px solid red;</p>
+       <p id="borderB"></p>
+     </div>
+
+      <div class="html_grid6">
+        <p class="bold">font-size</p>
+        <p>specifies the font size of the item</p><br>
+        <p>font-size: 24px;</p>
+        <p id="fontS">Lorem ipsum dolor sit amet, consectetur, adipiscing elit, sed diem nonummy nibh</p>
+      </div>
+   </div>
+</div>
+
+<!-- protocols -->
+<h3>Protocols</h3>
+<div class="container">
+  <div class="grid_container grid_protocol_container">
+
+    <div class="protocol_grid1">
+      <p class="bold">HTTP methods</p>
+      <p>GET - use this type of requests to retrieve resource representation/information only - and not to modify it in any way</p>
+      <p>POST - used to create a new resource into the collection of resources</p>
+      <p>PUT - use it primarily to update existing resource (if the resource does not exist then API may decide to create a new resource or not)</p>
+      <p>DELETE - used to delete resources (identified by the Request-URI)</p>
+      <p>PATCH - HTTP PATCH requests are to make partial update on a resource</p>
+    </div>
+    <div class="protocol_grid2">
+      <p class="bold">HTTP status code</p>
+      <p>1xx: Informational<br>example: 100 Continue</p>
+      <p>2xx: Success<br>example: 201 Created</p>
+      <p>3xx: Redirection<br>example: 301 Moved Permanently</p>
+      <p>4xx: Client Error<br>example: 404 Not Found</p>
+      <p>5xx: Server Error<br>example: 500 Internal Server Error</p>
+    </div>
+
+    <div class="protocol_grid3">
+      <p class="bold">DNS list by types</p>
+      <p>A - (address record) - specifies IP address (IPv4) for given host. A records are used for conversion of domain names to corresponding IP addresses</p>
+      <p>AAAA (IPv6 address record) - specifies IPv6 address for given host. So it works the same way as the A record and the difference is the type of IP address</p>
+      <p>CNAME (canonical name record) - specifies a domain name that has to be queried in order to resolve the original DNS query. Therefore CNAME records are used for creating aliases of domain names. CNAME records are truly useful when we want to alias our domain to an external domain. In other cases we can remove CNAME records and replace them with A records and even decrease performance overhead</p>
+      <p>HINFO (Host Information records) - used to acquire general information about a host. The record specifies type of CPU and OS. The HINFO record data provides the possibility to use operating system specific protocols when two hosts want to communicate. For security reasons the HINFO records are not typically used on public servers</p>
+      <p>ISDN (Integrated Services Digital Network records) - specifies ISDN address for a host. An ISDN address is a telephone number that consists of a country code, a national destination code, a ISDN Subscriber number and, optionally, a ISDN subaddress. The function of the record is only variation of the A resource record function</p>
+      <p>MX (Mail exchanger record) specifies a mail exchange server for a DNS domain name. The information is used by Simple Mail Transfer Protocol (SMTP) to route emails to proper hosts. Typically, there are more than one mail exchange server for a DNS domain and each of them have set priority</p>
+      <p>NS (name server) specifies an authoritative name server for given host</p>
+      <p>PTR (Reverse-lookup Pointer records) As opposed to forward DNS resolution (A and AAAA DNS records), the PTR record is used to look up domain names based on an IP address</p>
+      <p>SOA (Start of Authority records) - The record specifies core information about a DNS zone, including the primary name server, the email of the domain administrator, the domain serial number, and several timers relating to refreshing the zone</p>
+      <p>TXT (Text records) - The text record can hold arbitrary non-formatted text string. Typically, the record is used by Sender Policy Framework (SPF) to prevent fake emails to appear to be sent by you</p>
+    </div>
+
+    <div class="protocol_grid4">
+      <p class="bold">Identifying google's IP</p>
+      <p>To identify google.com IP, follow the next steps:</p>
+      <p>1. open Terminal</p>
+      <p>2. paste and run the command nslookup google.com</p>
+      <p>As result, you will receive "name" and "address":<br>Name: google.com.ua<br>Address: 216.58.215.99<br>Repeat steps 1 and 2 to identify google.com.ua IP</p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

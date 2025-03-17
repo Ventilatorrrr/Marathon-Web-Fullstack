@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AddamsShop</title>
+    <meta name="description" content="t06. Oscorp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
+    <link rel="canonical" href="https://addamsshop.com/index.html">
+</head>
+
+<body class="h-feed">
+
+<div class="header h-card">
+    <div id="logo">
+        <img src="assets/images/logo.jpg" alt="AddamsShop logo" class="u-photo">
+        <span class="p-name">AddamsShop</span>
+    </div>
+
+    <div id="menu">
+        <a href="https://t.me/Ventilatorrrrr" class="u-url"><span>ABOUT</span></a>
+        <a href="index.html" class="u-url"><span>CATALOG</span></a>
+        <a href="https://t.me/Ventilatorrrrr" class="u-url"><span>CONTACT</span></a>
+    </div>
+
+    <div id="search">
+        <input type="text" placeholder="Search..." aria-label="Search products">
+    </div>
+
+    <div id="telephone">
+        <span class="p-tel">Phone: +38(097)987-61-79</span>
+    </div>
+</div>
+
+<!-- Хлібні крихти -->
+<div class="breadcrumbs h-breadcrumb">
+    <a href="index.html" class="u-url p-category">HOME</a>
+    <span>/</span>
+    <a href="index.html" class="u-url p-category">CATALOG</a>
+</div>
+
+<main>
+
+    <div class="filters h-listing">
+        <p id="fil">Filters</p>
+        <div>
+            <!-- Форма для фільтрів за категоріями -->
+            <form class="form1">
+                <input type="checkbox" id="weapon" name="weapon">
+                <label for="weapon" class="box p-option">Weapon</label><br>
+
+                <input type="checkbox" id="spiritualism" name="spiritualism">
+                <label for="spiritualism" class="box p-option">Spiritualism</label><br>
+
+                <input type="checkbox" id="accessories" name="accessories">
+                <label for="accessories" class="box p-option">Accessories</label><br>
+
+                <input type="checkbox" id="pets" name="pets">
+                <label for="pets" class="box p-option">Pets</label>
+            </form>
+
+            <!-- Форма для діапазону цін -->
+            <form class="form2">
+                <p id="pr">Price</p>
+                <input type="range" name="price" id="price" min="0" max="10000" step="1" value="0" class="range u-range"><br>
+                <div id="price-container">
+                    <label id="min" class="p-min">0</label>
+                    <label id="max" class="p-max">10000</label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- h-feed для каталогу -->
+    <section class="catalog h-feed">
+
+        <!-- h-product для кожного продукту -->
+        <div class="product h-product">
+            <a href="card.html" class="u-url">
+                <img src="assets/images/crossbow.jpg" width="200" alt="Crossbow" class="u-photo">
+                <h3 class="p-name">Crossbow</h3>
+                <p class="price">$<span class="p-price">499</span></p>
+                <p class="navailability p-availability">Not available</p>
+                <label>BUY</label>
+            </a>
+        </div>
+
+        <div class="product h-product">
+            <a href="card.html" class="u-url">
+                <img src="assets/images/hand.jpg" width="200" alt="Hand" class="u-photo">
+                <h3 class="p-name">Hand</h3>
+                <p class="price">$<span class="p-price">1499</span></p>
+                <p class="availability p-availability">Available</p>
+                <label>BUY</label>
+            </a>
+        </div>
+
+        <div class="product h-product">
+            <a href="card.html" class="u-url">
+                <img src="assets/images/brain.jpg" width="200" alt="Brain of a Genius" class="u-photo">
+                <h3 class="p-name">Brain of a Genius</h3>
+                <p class="price">$<span class="p-price">4999</span></p>
+                <p class="availability p-availability">Available</p>
+                <label>BUY</label>
+            </a>
+        </div>
+
+        <div class="product h-product">
+            <a href="card.html" class="u-url">
+                <img src="assets/images/spirit-board.jpg" width="200" alt="Spirit board" class="u-photo">
+                <h3 class="p-name">Spirit board</h3>
+                <p class="price">$<span class="p-price">99</span></p>
+                <p class="availability p-availability">Available</p>
+                <label>BUY</label>
+            </a>
+        </div>
+
+        <div class="product h-product">
+            <a href="card.html" class="u-url">
+                <img src="assets/images/collar.jpg" width="200" alt="Collar" class="u-photo">
+                <h3 class="p-name">Collar</h3>
+                <p class="price">$<span class="p-price">59</span></p>
+                <p class="navailability p-availability">Not available</p>
+                <label>BUY</label>
+            </a>
+        </div>
+
+        <div class="product h-product">
+            <a href="card.html" class="u-url">
+                <img src="assets/images/dynamite.jpg" width="200" alt="Dynamite" class="u-photo">
+                <h3 class="p-name">Dynamite</h3>
+                <p class="price">$<span class="p-price">199</span></p>
+                <p class="availability p-availability">Available</p>
+                <label>BUY</label>
+            </a>
+        </div>
+
+        <div class="product h-product">
+            <a href="card.html" class="u-url">
+                <img src="assets/images/knife.jpg" width="200" alt="Knife" class="u-photo">
+                <h3 class="p-name">Knife</h3>
+                <p class="price">$<span class="p-price">89</span></p>
+                <p class="availability p-availability">Available</p>
+                <label>BUY</label>
+            </a>
+        </div>
+
+        <div class="product h-product">
+            <a href="card.html" class="u-url">
+                <img src="assets/images/organ.jpg" width="200" alt="Organ" class="u-photo">
+                <h3 class="p-name">Organ</h3>
+                <p class="price">$<span class="p-price">6999</span></p>
+                <p class="availability p-availability">Available</p>
+                <label>BUY</label>
+            </a>
+        </div>
+
+    </section>
+</main>
+
+<div class="pag">
+    <nav class="pagination" aria-label="Page navigation">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">&raquo;</a>
+    </nav>
+</div>
+
+<footer>
+    <p>&copy; AddamsShop | Ventilatorrrr | All rights reserved.</p>
+</footer>
+
+</body>
+
+</html>
+

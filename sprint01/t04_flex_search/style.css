@@ -1,0 +1,35 @@
+h1
+{
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+}
+.search
+{
+    flex: 1;
+    height: 2em;
+    color: green;
+    padding-left: 10px;
+}
+.search:hover
+{
+    color: red;
+}
+.button
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 2em;
+    color: green;
+}
+.button:hover
+{
+    color: red;
+}
+
+::placeholder {
+    color: green;
+}

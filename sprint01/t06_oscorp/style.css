@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Mountains+of+Christmas:wght@400;700&display=swap');
+html
+{
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mountains of Christmas';
+    background-color: #f2f2f2;
+}
+/* header */
+.header
+{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+    align-items: center;
+}
+
+#logo
+{
+    width: 20%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#logo span
+{
+    margin-left: 8px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#menu
+{
+    text-align: center;
+    position: relative;
+    width: 50%;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu span
+{
+    color: #262626;
+    padding: 18px 30px 18px 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#menu span:hover {
+    background-color: #f5f5f5;
+    color: #8b0000;
+}
+
+#search
+{
+    display: flex;
+    position: relative;
+    width: 15%;
+}
+
+#search input
+{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #cccccc;
+}
+
+#search input:focus {
+    border-color: white;
+    box-shadow: 0 0 0 white;
+}
+
+#telephone
+{
+    text-align: center;
+    position: relative;
+    width: 20%;
+}
+
+/* breadcrumbs */
+.breadcrumbs
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background: #cccccc;
+}
+
+.breadcrumbs a
+{
+    color: #262626;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.breadcrumbs a:last-child {
+    color: #8b0000;
+}
+
+/* main */
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#fil
+{
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.form1
+{
+    padding: 10px;
+    font-size: 28px;
+}
+
+.form2
+{
+    padding: 10px;
+    font-size: 28px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 0 15px;
+}
+
+.box {
+    position: relative;
+    padding-left: 10px; /* Відступ для кастомного чекбокса */
+    cursor: pointer;
+    font-size: 28px;
+}
+
+/* Створюємо квадратну комірку */
+.box::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Розмір комірки */
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px; /* Закруглені кути */
+    background-color: #cccccc;
+    transition: 0.3s;
+}
+
+input[type="checkbox"]:checked + .box::before {
+    background-color: #8b0000;
+    border-color: black;
+}
+
+/* Малюємо галочку */
+input[type="checkbox"]:checked + .box::after {
+    content: "✔";
+    position: absolute;
+    left: -19px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+#pr
+{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#price-container {
+    display: flex;
+    align-items: center; /* Вирівнює елементи вертикально */
+    gap: 90px; /* Змінюй значення, щоб коригувати відстань */
+}
+
+.range
+{
+    height: 3px;
+    width: 130px;
+    -webkit-appearance: none;
+    background: #2b333b;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #8b0000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.pag {
+    flex-grow: 1; /* Заповнює доступний простір */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Вирівнює пагінацію до низу */
+}
+
+/* Каталог */
+.catalog {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Адаптивна сітка */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product a
+{
+    text-decoration: none;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.product .price {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product .p-availability {
+    color: rgb(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.product .navailability {
+    color: rgb(139, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.product label {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product label:hover {
+    background-color: #600000;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Пагінація */
+.pagination {
+    display: flex;
+    justify-content: center; /* Вирівнює номери сторінок по центру */
+    align-items: center; /* Вирівнює по вертикалі */
+    height: 40px; /* Фіксована висота */
+    background: #cccccc; /* Фон для виділення */
+    border-top: 1px solid #ccc; /* Лінія над пагінацією */
+}
+
+.pagination a {
+    color: #262626;
+    padding: 4px 10px;
+    margin: 0 4px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination a.active {
+    background-color: #8b0000;
+    color: white;
+    border: 1px solid #8b0000;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    margin-top: auto; /* Прибираємо fixed, щоб футер ішов після контенту */
+    background-color: #262626;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    bottom: 0;
+}
+
+/* card */
+
+/* left */
+.card-main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#brain
+{
+    margin-left: 100px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 0 10px;
+}
+
+.cards img
+{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+/* right */
+.shopping {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #f2f2f2;
+    margin-top: 150px;
+}
+
+.shopping a {text-decoration: none;}
+
+.shopping h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.shopping .price {
+    color: black;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.shopping .availability {
+    color: rgb(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shopping label {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 10px 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.shopping label:hover {
+    background-color: #600000;
+}
+
+.description {
+    width: 100%; /* Ширина на весь екран */
+    margin-top: 80px;
+}
+
+.des
+{
+    background-color: #8b0000; /* Червоний фон */
+    color: white; /* Колір тексту */
+    text-align: center; /* Центрування тексту */
+    padding: 15px 0; /* Відступи зверху і знизу */
+    margin: 0; /* Забираємо відступи */
+    font-size: 28px; /* Збільшуємо розмір тексту */
+    font-weight: bold;
+}
+
+.features {
+    background-color: #d9d9d9; /* Сірий фон */
+    width: 100%; /* На весь екран */
+    padding: 20px; /* Відступи всередині */
+    box-sizing: border-box; /* Враховує padding у ширині */
+}
+
+.features p {
+    font-size: 20px; /* Розмір тексту */
+    margin: 10px 0; /* Відступ між пунктами */
+}
+
+.review {
+    width: 100%; /* Ширина на весь екран */
+    margin-top: 80px;
+}
+
+.reviews-cont
+{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 10px;
+    background-color: #d9d9d9;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.rev1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.rev2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.appraiser
+{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.response
+{
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Header */
+    .header {
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Main */
+    main {
+        flex-direction: column; /* Робимо блоки вертикальними */
+    }
+
+    .filters {
+        width: 100%;
+        height: 25%;
+    }
+
+    #fil
+    {
+        margin-left: 100px;
+    }
+
+    .filters div{
+        display: flex;
+        flex-direction: row;
+        background: #f2f2f2;
+    }
+
+    .form1
+    {
+        width: 50%;
+        margin-left: 50px;
+        margin-top: -20px;
+    }
+
+    .form2
+    {
+        width: 50%;
+        display: grid;
+        place-items: center; /* Центрування по горизонталі та вертикалі */
+        margin-top: -60px;
+    }
+
+    #price-container
+    {
+        margin-top: -60px;
+    }
+
+    .catalog {
+        grid-template-columns: repeat(2, 1fr); /* Два продукти в ряду */
+        gap: 15px;
+    }
+
+    .product {
+        padding: 10px;
+    }
+
+    .product button:hover {
+        background-color: #600000;
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+    }
+
+    /* Review section */
+    .review {
+        width: 100%; /* Ширина на весь екран */
+        margin-top: 80px;
+    }
+
+    .reviews-cont
+    {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 10px;
+        background-color: #d9d9d9;
+        padding: 10px;
+        box-sizing: border-box;
+
+    }
+
+    .rev1 .h-review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .rev2 .h-review {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .appraiser
+    {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .response
+    {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    /* Card */
+    .card-main {
+        flex-direction: column;
+        display: flex; /* Додаємо display: flex для застосування flexbox */
+        justify-content: center; /* Вирівнюємо картинку по вертикалі */
+        align-items: center; /* Вирівнюємо картинку по горизонталі */
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Центруємо картинку горизонтально */
+    }
+
+    .cards img {
+        display: block; /* Оскільки img є блоковим елементом за замовчуванням, потрібно додати display: block для запобігання зайвих відступів */
+        margin: 0 auto; /* Центруємо картинку */
+    }
+
+    .shopping {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        text-align: center;
+    }
+
+    .features
+    {
+        text-align: left;
+    }
+
+    /* Pagination */
+    .pagination {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+    }
+}
+

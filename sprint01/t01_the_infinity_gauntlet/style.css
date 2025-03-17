@@ -1,0 +1,14 @@
+.image
+{
+    width: 200px;
+}
+
+.man
+{
+    width: 100px;
+}
+
+.image:hover + table .odd td:nth-child(odd), .image:hover + table .even td:nth-child(even)
+{
+    opacity: 0;
+}

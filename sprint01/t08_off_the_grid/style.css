@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.comics {
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    margin: 0 20px 20px 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.comics>div:first-child { grid-column: 1 / span 44; }
+.comics>div:nth-child(2) { grid-column: 46 / span 55; }
+.comics>div:nth-child(3) { grid-column: 1 / span 39;}
+.comics>div:nth-child(4) { grid-column: 41 / span 32;}
+.comics>div:nth-child(5) { grid-column: 74 / span 27; }
+.comics>div:nth-child(6) { grid-column: 1 / span 19; }
+.comics>div:nth-child(7) { grid-column: 21 / span 28; }
+.comics>div:nth-child(8) { grid-column: 54 / span 14;}
+.comics>div:nth-child(9) { grid-column: 69 / span 32;}
+
+@media (min-width: 640px) and (max-width: 1366px) {
+    .comics>div:first-child { grid-column: 1 / span 72; }
+    .comics>div:nth-child(2) { grid-column: 1 / span 87; }
+    .comics>div:nth-child(3) { grid-column: 1 / span 67; }
+    .comics>div:nth-child(4) { grid-column: 1 / span 54; }
+    .comics>div:nth-child(5) { grid-column: 55 / span 46; }
+    .comics>div:nth-child(6) { grid-column: 1 / span 33; }
+    .comics>div:nth-child(7) { grid-column: 34 / span 49; }
+    .comics>div:nth-child(8) { grid-column: 1 / span 24; }
+    .comics>div:nth-child(9) { grid-column: 25 / span 56; }
+}
+
+@media (max-width: 640px) {
+    .comics>div:first-child { grid-column: 1 / span 78; }
+    .comics>div:nth-child(2) { grid-column: 1 / span 87; }
+    .comics>div:nth-child(3) { grid-column: 1 / span 76; }
+    .comics>div:nth-child(4) { grid-column: 1 / span 61; grid-row: 4; }
+    .comics>div:nth-child(5) { grid-column: 1 / span 52; grid-row: 5; }
+    .comics>div:nth-child(6) { grid-column: 62 / span 39; grid-row: 4 / 6; }
+    .comics>div:nth-child(7) { grid-column: 1 / span 55; }
+    .comics>div:nth-child(8) { grid-column: 56 / span 28; }
+    .comics>div:nth-child(9) { grid-column: 1 / span 63; }
+}
