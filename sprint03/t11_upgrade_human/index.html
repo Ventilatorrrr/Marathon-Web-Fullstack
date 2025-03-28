@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Upgrade Human</title>
+  <meta charset="utf-8">
+  <meta name="description" content="t11. Upgrade Human">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div>
+
+  <div class="infoBox">
+    <h1 id="info">Human</h1>
+  </div>
+
+  <div class="imageBox">
+    <img id="humanImage" src="assets/images/human.png" width="900" alt="human">
+    <img id="superheroImage" src="assets/images/observer.png" width="900" alt="superhero" style="display: none;">
+  </div>
+
+  <div class="propBox">
+    <h2>Name:&nbsp;</h2><span id="firstName"></span>
+    <h2>Surname:&nbsp;</h2><span id="lastName"></span>
+    <h2>Gender:&nbsp;</h2><span id="gender"></span>
+    <h2>Age:&nbsp;</h2><span id="age"></span>
+    <h2>Calories:&nbsp;</h2><span id="calories"></span>
+  </div>
+
+  <div class="buttonBox" id="humanButtons">
+    <button id="feedButton" onclick="human.feed()">Feed</button>
+    <button id="sleepButton" onclick="human.sleepFor()">Sleep</button>
+    <button id="heroButton" onclick="turnIntoSuperhero()">Turn into superhero</button>
+  </div>
+
+  <div class="buttonBox" id="superheroButtons" style="display: none;">
+    <button id="feedButton2" onclick="hero.feed()">Feed</button>
+    <button id="sleepButton2" onclick="hero.sleepFor()">Sleep</button>
+    <button id="flyButton" onclick="hero.fly()">Fly</button>
+    <button id="fightButton" onclick="hero.fightWithEvil()">Fight with Oracle</button>
+    <button id="testingButton" onclick="hero.testing()">Testing</button>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

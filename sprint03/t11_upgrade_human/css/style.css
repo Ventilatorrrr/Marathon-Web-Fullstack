@@ -1,0 +1,89 @@
+html
+{
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #d6caa9;
+    font-family: "Roboto Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.infoBox
+{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    background-color: #7d631c;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #f1e4c0;
+}
+
+.imageBox
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.propBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: #7d631c;
+    color: #f1e4c0;
+}
+
+.propBox h2
+{
+    display: flex;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.propBox span
+{
+    display: flex;
+    font-size: 30px;
+}
+
+.buttonBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #544212;
+}
+
+.buttonBox button
+{
+    width: 250px;
+    height: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 0;
+    border: 0;
+    background: #544212;
+    color: #f1e4c0;
+}
+
+.buttonBox button:hover
+{
+    background-color: #e8d296;
+    color: #3f320e;
+}
