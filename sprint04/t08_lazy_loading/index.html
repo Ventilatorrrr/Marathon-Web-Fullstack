@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lazy loading</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="t08. Lazy loading">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Lazy loading</h1>
+
+<div id="counter"></div>
+
+<div class="list">
+
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://cdn.pixabay.com/photo/2017/09/26/15/13/computer-2788918_1280.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://cdn.pixabay.com/photo/2018/08/10/15/43/woman-3597095_1280.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_1280.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://cdn.pixabay.com/photo/2016/11/18/00/32/programming-1833058_1280.png" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://zastavki.gas-kvas.com/uploads/posts/2024-09/thumbs/zastavki-gas-kvas-com-8rs4-p-zastavki-na-rabochii-stol-programmista-7.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://zastavki.gas-kvas.com/uploads/posts/2024-09/zastavki-gas-kvas-com-8ve7-p-zastavki-na-rabochii-stol-programmista-16.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://img.goodfon.ru/original/1920x1080/e/60/binarnyy-kod-it.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://kartinki.pics/uploads/posts/2021-07/1625703027_5-kartinkin-com-p-oboi-programmista-krasivie-6.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://wallpaper.forfun.com/fetch/99/9998247f121f83a099c19ab8f6232db8.jpeg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://cdn.pixabay.com/photo/2017/09/26/15/13/computer-2788918_1280.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://cdn.pixabay.com/photo/2018/08/10/15/43/woman-3597095_1280.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_1280.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://cdn.pixabay.com/photo/2016/11/18/00/32/programming-1833058_1280.png" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://zastavki.gas-kvas.com/uploads/posts/2024-09/thumbs/zastavki-gas-kvas-com-8rs4-p-zastavki-na-rabochii-stol-programmista-7.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://zastavki.gas-kvas.com/uploads/posts/2024-09/zastavki-gas-kvas-com-8ve7-p-zastavki-na-rabochii-stol-programmista-16.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://img.goodfon.ru/original/1920x1080/e/60/binarnyy-kod-it.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://kartinki.pics/uploads/posts/2021-07/1625703027_5-kartinkin-com-p-oboi-programmista-krasivie-6.jpg" alt="">
+  </div>
+  <div>
+    <img src="https://i.pinimg.com/736x/d9/52/5a/d9525a1392bc768864778c8d25c3021a.jpg" width="600" height="600" data-src="https://wallpaper.forfun.com/fetch/99/9998247f121f83a099c19ab8f6232db8.jpeg" alt="">
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

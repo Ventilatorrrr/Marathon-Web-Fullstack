@@ -1,0 +1,57 @@
+.stone
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transform: rotate(45deg);
+    background-color: white;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.stone[value="off"] { border: 5px dashed black; }
+
+#red
+{
+    float: left;
+    left: 30%;
+    top: 60%;
+    background-color: #cc0000;
+}
+
+#green
+{
+    float: left;
+    left: 50%;
+    top: 60%;
+    background-color: #2eb82e;
+}
+
+#blue
+{
+    left: 50%;
+    top: 20%;
+    background-color: #1f66e0;
+}
+
+#yellow
+{
+    left: 20%;
+    top: 40%;
+    background-color: #ffbf00;
+}
+
+#pink
+{
+    left: 30%;
+    top: 20%;
+    background-color: #ff0080;
+}
+
+#purple
+{
+    left: 60%;
+    top: 40%;
+    background-color: #bf00ff;
+}

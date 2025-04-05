@@ -1,0 +1,119 @@
+body
+{
+    margin: 0;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    width: 50%;
+    padding: 40px 0;
+    background-color: whitesmoke;
+    border: 1px solid #d9d9d9;
+}
+
+.buttons
+{
+    display: flex;
+    height: 10%;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.addButt, .clearButt
+{
+    height: 37px;
+    width: 150px;
+
+    background-color: rgba(204, 102, 204, 0.6);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.info
+{
+    display: flex;
+    height: 50%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgba(204, 102, 204, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info label
+{
+    font-size: 18px;
+    align-self: flex-start;
+    color: #732673;
+    font-weight: bold;
+}
+
+.info textarea
+{
+    height: 200px;
+    width: 100%;
+    border: 3px solid #732673;
+    border-radius: 10px;
+    outline: none;
+}
+
+.info textarea:focus
+{
+    border: 3px solid #732673;
+    outline: none;
+}
+
+.notes
+{
+    display: flex;
+    height: 50%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgba(204, 102, 204, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.notes label
+{
+    font-size: 18px;
+    align-self: flex-start;
+    color: #732673;
+    font-weight: bold;
+}
+
+.notes input
+{
+    height: 100px;
+    width: 100%;
+    border: 3px solid #732673;
+    border-radius: 10px;
+    outline: none;
+}
+
+.notes input:focus
+{
+    border: 3px solid #732673;
+    outline: none;
+}

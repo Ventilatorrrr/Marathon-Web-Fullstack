@@ -1,0 +1,38 @@
+body
+{
+    position: relative;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+img
+{
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.list div
+{
+    margin-bottom: 50px;
+}
+
+#counter
+{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: red;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+#counter.loaded
+{
+    background: green;
+}
