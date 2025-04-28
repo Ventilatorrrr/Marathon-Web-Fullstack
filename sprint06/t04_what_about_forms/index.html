@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What about forms</title>
+    <meta name="description" content="t04. What about forms">
+</head>
+<body>
+
+<h1>Who was able to use the glove to save the world?</h1>
+
+<form method="POST" action="/submit-answer" style="font-size: 20px">
+    <input type="radio" name="answer" id ="1" value="wrong">
+    <label for="1">Quentin Tarantino</label><br>
+    <input type="radio" name="answer" id ="2" value="correct">
+    <label for="2">Iron Man</label><br>
+    <input type="radio" name="answer" id ="3" value="wrong">
+    <label for="3">Katushka</label><br>
+
+    <button type="submit" style="margin-top: 10px; border-radius: 5px; border: 1px solid black">show result</button><br>
+</form>
+
+<div id="result" style="font-size: 24px; margin-top: 20px;"></div>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go web!</title>
+    <meta name="description" content="t07. Go web!">
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: whitesmoke;
+            font-family: Arial, sans-serif;
+        }
+
+        .btn-container
+        {
+            display: flex;
+            gap: 30px;
+        }
+
+        a button
+        {
+            padding: 15px 30px;
+            font-size: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: #8a6ae2;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        a button:hover
+        {
+            background-color: #683fd9;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="btn-container">
+    <a href="/normal"><button>Normal</button></a>
+    <a href="/quantum"><button>Quantum</button></a>
+</div>
+
+</body>
+
+</html>
