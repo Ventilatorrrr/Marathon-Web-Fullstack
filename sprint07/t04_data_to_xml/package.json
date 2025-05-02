@@ -1,0 +1,18 @@
+{
+  "name": "avenger-quotes",
+  "version": "1.0.0",
+  "description": "Project to manage Avenger quotes and convert to/from XML",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "avenger",
+    "quotes",
+    "xml",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC"
+}

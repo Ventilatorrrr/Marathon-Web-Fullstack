@@ -1,0 +1,13 @@
+{
+  "name": "t00_session_for_new",
+  "version": "1.0.0",
+  "description": "Hero form with session",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-session": "^1.18.1"
+  }
+}

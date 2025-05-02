@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Show other sites</title>
+    <style>
+        #result
+        {
+            white-space: pre-wrap;
+            border: 1px solid black;
+            margin-top: 1em;
+            padding: 1em;
+        }
+        #urlDisplay
+        {
+            margin-top: 0.5em;
+            font-weight: bold;
+        }
+        #backLink
+        {
+            margin-left: 1em;
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Show other sites</h1>
+
+<form id="urlForm">
+    <input type="text" id="urlInput" placeholder="url" required>
+    <button type="submit">Go</button>
+    <span id="backLink" style="display: none;">BACK</span>
+</form>
+
+<div id="urlDisplay"></div>
+<div id="result"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

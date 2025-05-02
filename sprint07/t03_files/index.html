@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>File manager</title>
+    <style>
+        body
+        {
+            padding: 10px;
+        }
+        .cont
+        {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>File manager</h1>
+
+<form class="cont" id="createForm" action="/create" method="post">
+    <h2>Create a file</h2>
+
+    <label for="filename">Filename</label>
+    <input type="text" id="filename" name="filename" required><br><br>
+
+    <label for="content">Content</label>
+    <textarea id="content" name="content" maxlength="500" rows="5" style="width: 500px" required></textarea><br><br>
+
+    <button type="submit" id="createFileButton">Create file</button>
+</form>
+
+<div class="cont">
+    <h2>Files:</h2>
+    <ul id="createdFiles"></ul>
+</div>
+
+<div id="selectedFile" class="cont" style="display: none;"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
