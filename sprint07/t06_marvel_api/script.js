@@ -41,7 +41,7 @@ function displayData(data)
             <p><strong>ID:</strong> ${character.id}</p>
             <p><strong>Description:</strong> ${character.description || 'No description available.'}</p>
             <p><strong>Modified:</strong> ${character.modified}</p>
-            <p><strong>Resource URI:</strong> <a href="${character.resourceURI}" target="_blank">Link</a></p>
+            <p><strong>Resource URI:</strong> ${character.resourceURI}</p>
             <p><strong>Comics Available:</strong> ${character.comics?.available || 0}</p>
             <p><strong>Comics:</strong> ${comicsList || 'No comics listed.'}</p>
         `;
