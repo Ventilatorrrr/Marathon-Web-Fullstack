@@ -1,0 +1,8 @@
+{
+  "host": "localhost",
+  "user": "klytovchenko",
+  "password": "securepass",
+  "database": "ucode_web",
+  "connectionLimit": 10
+}
+
