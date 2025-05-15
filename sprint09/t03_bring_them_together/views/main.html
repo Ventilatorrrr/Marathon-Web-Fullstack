@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>S.W.O.R.D.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Welcome, <span id="username"></span>!</h1>
+<h2>Status: <span id="status"></span></h2>
+
+<div>
+    <button id="userButton" onclick="window.location.href='/user'" class="mainBut">User</button>
+    <button id="adminButton" onclick="window.location.href='/admin'" class="mainBut">Admin</button>
+</div>
+
+<h4>Update Your Data</h4>
+<form method="POST" action="/update-profile">
+    <input type="text" name="full_name" placeholder="Full name" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="password" name="password" placeholder="New password" required><br>
+    <button type="submit">Update</button>
+</form>
+
+<form method="POST" action="/logout">
+    <button class="miniBut centered-button" type="submit">Logout</button>
+</form>
+
+
+<script>
+    fetch('/session-data')
+            .then(res => {
+                if (!res.ok) throw new Error('Not authorized');
+                return res.json();
+            })
+            .then(data => {
+                document.getElementById('username').innerText = data.login;
+                document.getElementById('status').innerText = data.status;
+
+                if (data.status !== 'admin')
+                {
+                    document.getElementById('adminButton').disabled = true;
+                }
+                if (data.status !== 'user')
+                {
+                    document.getElementById('userButton').disabled = true;
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                window.location.href = '/login';
+            });
+</script>
+
+
+
+</body>
+</html>
+
+

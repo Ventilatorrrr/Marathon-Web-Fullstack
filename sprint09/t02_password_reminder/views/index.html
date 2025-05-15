@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Password Reminder</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<h1>Password Reminder</h1>
+<form id="reminderForm">
+    <input type="email" name="email" placeholder="Enter your email" required /><br>
+    <button type="submit">Send Reminder</button>
+</form>
+
+<p id="message"></p>
+
+<script>
+    document.getElementById('reminderForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData.entries());
+
+        const res = await fetch('/remind', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+        const msg = document.getElementById('message');
+        msg.textContent = result.message;
+        msg.style.color = result.success ? 'navy' : 'firebrick';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "t02_password_reminder",
+  "version": "1.0.0",
+  "description": "Password reminder system for registered users",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.0",
+    "body-parser": "^1.19.0",
+    "express-session": "^1.17.2"
+  },
+  "devDependencies": {},
+  "author": "Kate",
+  "license": "ISC"
+}

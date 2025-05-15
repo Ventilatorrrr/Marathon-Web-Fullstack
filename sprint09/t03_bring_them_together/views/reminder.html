@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>S.W.O.R.D.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Password Reminder</h1>
+<form id="reminderForm" action="/reminder" method="post">
+    <input name="email" type="email" placeholder="Your email" required><br>
+    <button type="submit">Send reminder</button>
+</form>
+
+<a href="/login" class="miniBut">Back to login</a>
+
+<p id="message"></p>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const error = params.get('error');
+    const success = params.get('success');
+    const messageEl = document.getElementById('message');
+
+    if (error)
+    {
+        messageEl.textContent = decodeURIComponent(error);
+        messageEl.style.color = 'firebrick';
+    }
+    else if (success)
+    {
+        messageEl.textContent = decodeURIComponent(success);
+        messageEl.style.color = 'navy';
+    }
+</script>
+
+</body>
+
+</html>
+

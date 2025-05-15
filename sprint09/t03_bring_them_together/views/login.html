@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>S.W.O.R.D.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Login as S.W.O.R.D. Agent</h1>
+<form id="loginForm" action="/login" method="post">
+    <input name="login" placeholder="Login" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <button type="submit">Login</button>
+</form>
+
+<div id="logBut">
+    <a href="/register" class="miniBut">Register</a>
+    <a href="/reminder" class="miniBut">Forgot password?</a>
+</div>
+
+<p id="message"></p>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const error = params.get('error');
+    if (error)
+    {
+        document.getElementById('message').textContent = decodeURIComponent(error);
+        document.getElementById('message').style.color = 'firebrick';
+    }
+</script>
+
+</body>
+
+</html>

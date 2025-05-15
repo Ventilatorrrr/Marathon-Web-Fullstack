@@ -1,0 +1,15 @@
+{
+  "db": {
+    "host": "localhost",
+    "user": "root",
+    "password": "123",
+    "database": "sword"
+  },
+  "smtp": {
+    "service": "gmail",
+    "auth": {
+      "user": "katlitovochka@gmail.com",
+      "pass": "rilr hzzz ohmj uiuo"
+    }
+  }
+}
