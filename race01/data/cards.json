@@ -1,0 +1,22 @@
+[
+  { "name": "Iron-Man", "image": "Iron-Man.png", "attack": 7, "defense": 4, "cost": 5,   "shield": true},
+  { "name": "Hulk", "image": "Hulk.png", "attack": 9, "defense": 3, "cost": 6 },
+  { "name": "Captain America", "image": "Captain-America.png", "attack": 5, "defense": 7, "cost": 4 },
+  { "name": "Black Panther", "image": "Black-Panther.png", "attack": 6, "defense": 5, "cost": 5 },
+  { "name": "Thor", "image": "Thor.png", "attack": 8, "defense": 4, "cost": 6 },
+  { "name": "Spider-Man", "image": "Spider-Man.png", "attack": 6, "defense": 4, "cost": 4 },
+  { "name": "Ant-Man", "image": "Ant-man.png", "attack": 5, "defense": 3, "cost": 3,   "shield": true },
+  { "name": "Captain Marvel", "image": "Captain-Marvel.png", "attack": 8, "defense": 5, "cost": 6 },
+  { "name": "Star-Lord", "image": "Star-Lord.png", "attack": 4, "defense": 3, "cost": 3 },
+  { "name": "Rocket", "image": "Rocket.png", "attack": 5, "defense": 2, "cost": 3 },
+  { "name": "Gamora", "image": "Gamora.png", "attack": 6, "defense": 3, "cost": 4 },
+  { "name": "Nebula", "image": "Nebula.png", "attack": 5, "defense": 3, "cost": 3,   "shield": true },
+  { "name": "Ultron", "image": "Ultron.png", "attack": 7, "defense": 5, "cost": 5 },
+  { "name": "Vision", "image": "Vision.png", "attack": 6, "defense": 6, "cost": 5 },
+  { "name": "Loki", "image": "Loki.png", "attack": 6, "defense": 2, "cost": 4 },
+  { "name": "Winter Soldier", "image": "Winter-Soldier.png", "attack": 6, "defense": 4, "cost": 4,   "shield": true },
+  { "name": "Black Widow", "image": "Black-Widow.png", "attack": 5, "defense": 3, "cost": 3 },
+  { "name": "Mantis", "image": "Mantis.png", "attack": 3, "defense": 5, "cost": 2 },
+  { "name": "Hawkeye", "image": "Hawkeye.png", "attack": 5, "defense": 2, "cost": 3 },
+  { "name": "Thanos", "image": "Thanos.png", "attack": 10, "defense": 6, "cost": 7,   "shield": true }
+]

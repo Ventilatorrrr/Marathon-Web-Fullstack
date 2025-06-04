@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .contentSettings {
+      height: 800px;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-wrapper">
+  <img src="/image/background.jpg" alt="background" class="background-img">
+</div>
+<div class="contentSettings">
+<h1 class="leader-title">🏆 Leaderboard</h1>
+<table class="leaderboard">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Avatar</th>
+      <th>Login</th>
+      <th>Wins</th>
+      <th>Losses</th>
+      <th>Total Games</th>
+    </tr>
+  </thead>
+  <tbody id="leaderboard-body">
+  <!-- гравці тут -->
+</tbody>
+</table>
+</div>
+<button id="refresh-button">
+  <span class="icon">🔁</span> Refresh
+</button>
+  <a href="/home" class="miniBut">Back</a>
+  <script src="/scripts/leaderboards.js"></script>
+  <script src="/scripts/registerAudio.js"></script>
+</body>
+</html>
